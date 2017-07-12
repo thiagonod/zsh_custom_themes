@@ -19,7 +19,7 @@ local current_dir="%B%F{blue}%1./%f%b"
 local git_branch='$(git_prompt_info)'
 local prompt_time="%F{white}%T%f"
 
-PROMPT="${user_name} ${current_dir}${git_branch} ${prompt_string} "
+PROMPT=" ${user_name} ${current_dir}${git_branch} ${prompt_string} "
 RPROMPT="${return_code} ${user_host} ${prompt_time}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%B%F{white}%f%b%F{blue}"
