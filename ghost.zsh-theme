@@ -15,7 +15,7 @@ local prompt_string="%(?:%F{blue}»%f:%F{red}»%f)"
 local return_code="%(?..%F{red}err:%? ↵%f)"
 local user_name="%B%F{cyan}λ%f%b"
 local user_host="${PR_HOST}" 
-local current_dir="%B%F{blue}%2./%f%b"
+local current_dir="%B%F{blue}%1./%f%b"
 local git_branch='$(git_prompt_info)'
 local prompt_time="%F{white}%T%f"
 
