@@ -1,12 +1,11 @@
-# ghost theme
-# author Thiago Gois Martins
+# ghost theme https://github.com/thiagonod/zsh_custom_themes
 
 setopt prompt_subst
 
 () {
 
 local PR_HOST
-# Check if we are on SSH or not
+# SSH?
 if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then
   PR_HOST='%F{red}%M%f' # SSH
 else
