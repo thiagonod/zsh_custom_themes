@@ -1,4 +1,4 @@
-# zsh_custom_themes
+# ZSH custom themes
 My custom oh-my-zsh themes
 
 Instale o Oh-My-Zsh apartir de http://ohmyz.sh/
