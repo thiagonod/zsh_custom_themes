@@ -7,7 +7,7 @@ setopt prompt_subst
 
 local prompt_string="%(?:%F{142}»%f:%F{160}»%f)"
 local user_name="%B%F{142}‹%n›%f%b"
-local atual_path="%B%F{blue}%~%f%b"
+local atual_path="%F{blue}%~%f"
 local git_branch='$(git_prompt_info)'
 local rvm_ruby=''
 if ${HOME}/.rvm/bin/rvm-prompt &> /dev/null; then # detect user-local rvm installation
