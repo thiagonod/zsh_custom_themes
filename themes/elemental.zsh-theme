@@ -12,7 +12,7 @@ if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then
 else
   PR_HOST='%F{cyan}%M%f' # no SSH
 fi
-local prompt_string="%(?:%F{142}⋍%f:%F{160}⋍%f)"
+local prompt_string="%(?:%F{142}»%f:%F{160}»%f)"
 local return_code="%(?..%F{160}err:%? ↵%f)"
 local user_name="%B%F{142}Ƣ%f%b"
 local user_host="${PR_HOST}" 
