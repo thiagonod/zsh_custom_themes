@@ -7,5 +7,6 @@ Após a instalação, faça o download ou um clone dos arquivos, copie e cole os
 
 Para usar este tema, altere o arquivo ~/.zshrc,
 mude a linha ZSH_THEME="robbyrussell" para ZSH_THEME="nome_tema"
+substitua nome_tema pelo nome do tema que você quiser usar.
 
 Preview - https://github.com/thiagonod/zsh_custom_themes/wiki
