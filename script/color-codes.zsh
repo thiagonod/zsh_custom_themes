@@ -1,3 +1,6 @@
+#!/bin/zsh
+# Usage: zsh color-codes.zsh
+
 for COLOR in {0..255}
 do
     for STYLE in "38;5"
