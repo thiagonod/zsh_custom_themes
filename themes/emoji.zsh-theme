@@ -3,8 +3,8 @@
 #
 prompt() { echo "%(?:%F{142}❭%f:%F{160}❭%f)" }
 error_code() { echo "%(?..%F{8}☠ %f%F{196}%?%f)" }
-mr() { echo "%F{142}⦉%f" }
-ml() { echo "%F{142}⦊%f" }
+mr() { echo "%F{142} ⦉%f" }
+ml() { echo "%F{142}⦊ %f" }
 prompt_info() { echo "%F{8}💻 %f%B%F{142}%n%f%b %F{8}📂:%f%F{blue}%~%f" }
 git_branch() {
     if [ $(git_prompt_info) ]; then
@@ -24,18 +24,17 @@ ruby_version() {
 }
 put_spaces() {  
     local espacos
-    (( espacos = ${COLUMNS} - ${#USER} - ${#${PWD/HOME/~}} - 4 ))
+    (( espacos = (${COLUMNS} - ${#USER} - ${#${PWD/HOME/~}} - 8) / 2 ))
     
     local spacing=""
     for i in {1..$espacos}; do
         spacing="${spacing} "
     done
-    
     echo $spacing    
 }
 
 precmd() { 
-    print -P "\n$(put_spaces)$(ml)$(prompt_info) $(ruby_version)$(mr)" 
+    print -P "\n$(put_spaces)$(ml)$(prompt_info)  $(ruby_version) $(mr)$(put_spaces)" 
     PROMPT="$(git_branch) $(prompt) "
     RPROMPT="$(error_code)"
 }

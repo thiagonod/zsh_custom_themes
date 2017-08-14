@@ -39,7 +39,7 @@ precmd() {
     PROMPT="$(git_branch) $(prompt) "
     RPROMPT="$(error_code)"
 }
-ZSH_THEME_GIT_PROMPT_PREFIX="%B%F{white}⚡%f%b::%F{blue}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%B%F{white}⚡%f%b::%F{105}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%f"
-ZSH_THEME_GIT_PROMPT_DIRTY="%F{202}_☹"
-ZSH_THEME_GIT_PROMPT_CLEAN="%F{76}_😃"
+ZSH_THEME_GIT_PROMPT_DIRTY="%F{202}☹"
+ZSH_THEME_GIT_PROMPT_CLEAN="%F{76}😃"
