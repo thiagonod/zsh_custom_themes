@@ -28,7 +28,7 @@ put_spaces() {
     
     local spacing=""
     for i in {1..$espacos}; do
-        spacing="${spacing} "
+        spacing="${spacing}%F{238}⁛%f"
     done
     echo $spacing    
 }
