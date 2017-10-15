@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-# nody theme https://github.com/thiagonod/zsh_custom_themes
+# emoji theme https://github.com/thiagonod/zsh_custom_themes
 #
 prompt() { echo "%(?:%F{142}❭%f:%F{160}❭%f)" }
 error_code() { echo "%(?..%F{8}☠ %f%F{196}%?%f)" }
